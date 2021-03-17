@@ -36,6 +36,14 @@ export default new Router({
     {
       path: '/login',
       component: () => import('@/components/login')
+    },
+    {
+      path: '/404',
+      component: () => import('@/components/error-page/404')
+    },
+    {
+      path: '*',
+      redirect: '/404'
     }
   ]
 })
