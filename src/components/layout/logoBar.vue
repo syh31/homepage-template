@@ -9,21 +9,6 @@
           </div>
         </el-col>
         <el-col :span="12" style="height: 90px; ">
-          <div  style="position: relative; top: 50%; float: left; transform: translateY(-50%); ">
-            <el-select
-              v-model="selectProvince"
-              placeholder="请选择报考省份"
-              clearable
-              class="selectProvinceStyle"
-            >
-              <el-option
-                v-for="dict in provincesList"
-                :key="dict"
-                :label="dict"
-                :value="dict"
-              ></el-option>
-            </el-select>
-          </div>
           <div style="position: relative; top: 50%; float: right; transform: translateY(-50%); width: 330px; ">
             <el-input
               v-model="searchValue"

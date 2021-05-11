@@ -11,11 +11,27 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 
+Vue.prototype.msgSuccess = function (msg) {
+  this.$message({showClose: true, message: msg, type: 'success'})
+}
+
+Vue.prototype.msgError = function (msg) {
+  this.$message({showClose: true, message: msg, type: 'error'})
+}
+
+Vue.prototype.msgInfo = function (msg) {
+  this.$message.info(msg)
+}
+
+Vue.prototype.msgWarning = function (msg) {
+  this.$message({showClose: true, message: msg, type: 'warning'})
+}
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {App},
   template: '<App/>',
   store
 })

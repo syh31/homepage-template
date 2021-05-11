@@ -4,7 +4,6 @@
     <logo-bar></logo-bar>
     <navbar></navbar>
     <app-main></app-main>
-    <Footer></Footer>
   </div>
 </template>
 
@@ -13,10 +12,9 @@ import TopBar from './layout/topBar'
 import LogoBar from './layout/logoBar'
 import Navbar from './layout/Navbar'
 import AppMain from './layout/AppMain'
-import Footer from './layout/Footer'
 export default {
   name: 'homePage',
-  components: {Footer, AppMain, Navbar, LogoBar, TopBar}
+  components: {AppMain, Navbar, LogoBar, TopBar}
 }
 </script>
 

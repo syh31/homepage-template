@@ -1,6 +1,21 @@
-# college-entrance-exam
+# 自用网站首页框架
 
 > A Vue.js project
+
+## 已集成依赖
+
+```json
+"axios": "^0.21.1",
+"element-ui": "^2.15.1",
+"js-cookie": "^2.2.1",
+"vue": "^2.5.2",
+"vue-router": "^3.0.1",
+"vuex": "^3.6.2"
+```
+
+* 已启用eslint语法检查
+* 已配置404页面
+* 已封装axios请求
 
 ## Build Setup
 
