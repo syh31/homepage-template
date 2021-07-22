@@ -1,19 +1,24 @@
 <template>
   <div id="wrap">
     <div style="float: left">
-      <img src="../../assets/404.png" alt="404.life" width="910" />
+      <img src="../../assets/404.png" alt="404.life" width="910px"/>
     </div>
     <div class="text">
       <p style="color: #0086F0;font-size: 26px;margin-bottom: 6px;">很抱歉</p>
-      <p style="color: #0086F0;font-size: 22px;margin-bottom: 20px;">您访问的页面不存在</p>
-      <el-button round type="primary">返回首页</el-button>
+      <p style="color: #909399;font-size: 22px;margin-bottom: 20px;">您访问的页面不存在</p>
+      <el-button round type="primary" size="medium" @click="goBackHome">返回首页</el-button>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Page404'
+  name: 'Page404',
+  methods: {
+    goBackHome () {
+      this.$router.replace('/')
+    }
+  }
 }
 </script>
 

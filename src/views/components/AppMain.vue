@@ -36,9 +36,7 @@ export default {
   transform: translateX(30px);
 }
 
-/*.app-main {*/
-/*  width: 1190px;*/
-/*  margin: 0 auto;*/
-/*  overflow-x: hidden;*/
-/*}*/
+.app-main {
+  overflow-x: hidden;
+}
 </style>
